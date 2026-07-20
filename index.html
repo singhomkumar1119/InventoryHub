@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>InventoryHub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>InventoryHub</h1>
+    <p>Live inventory dashboard — front-end/back-end integration demo</p>
+  </header>
+
+  <main>
+    <section id="controls">
+      <label>
+        Category filter:
+        <select id="categoryFilter">
+          <option value="">All</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Furniture">Furniture</option>
+          <option value="Stationery">Stationery</option>
+        </select>
+      </label>
+      <button id="refreshBtn">Refresh</button>
+    </section>
+
+    <section id="status"></section>
+
+    <table id="productsTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Price</th>
+          <th>Stock</th>
+        </tr>
+      </thead>
+      <tbody id="productsBody"></tbody>
+    </table>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
